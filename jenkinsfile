@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                echo 'pull succed'
+                git branch: 'main', url: 'https://github.com/narwadesonali7/jenkinfile-repo-declarative.git'
             }
         }
          stage('build') {
